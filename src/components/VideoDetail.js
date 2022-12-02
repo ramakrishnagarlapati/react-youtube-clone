@@ -45,7 +45,7 @@ const VideoDetail = () => {
               py={1}
               px={2}
             >
-              <Link to={`/channel/${channelId}`}>
+              <Link to={`/react-youtube-clone/channel/${channelId}`}>
                 <Typography variant="h6" color="#fff">
                   {channelTitle}
                   <CheckCircle

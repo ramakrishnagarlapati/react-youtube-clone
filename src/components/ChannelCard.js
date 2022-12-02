@@ -17,7 +17,7 @@ const ChannelCard = ({ channel, marginTop }) => (
       marginTop: marginTop,
     }}
   >
-    <Link to={`/channel/${channel?.id?.channelId}`}>
+    <Link to={`/react-youtube-clone/channel/${channel?.id?.channelId}`}>
       <CardContent
         sx={{
           display: "flex",

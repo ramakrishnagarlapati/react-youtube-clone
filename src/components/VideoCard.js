@@ -24,7 +24,7 @@ const VideoCard = ({
         borderRadius: 0,
       }}
     >
-      <Link to={videoId && `/video/${videoId}`}>
+      <Link to={videoId && `/react-youtube-clone/video/${videoId}`}>
         <CardMedia
           component="img"
           alt={snippet.title}
@@ -33,12 +33,17 @@ const VideoCard = ({
         />
       </Link>
       <CardContent sx={{ backgroundColor: "#1e1e1e", height: "106px" }}>
-        <Link to={videoId && `/video/${videoId}`}>
+        <Link to={videoId && `/react-youtube-clone/video/${videoId}`}>
           <Typography variant="subtitle1" color="#FFF" fontWeight="bold">
             {snippet?.title.slice(0, 60)}
           </Typography>
         </Link>
-        <Link to={snippet?.channelId && `/channel/${snippet?.channelId}`}>
+        <Link
+          to={
+            snippet?.channelId &&
+            `/react-youtube-clone/channel/${snippet?.channelId}`
+          }
+        >
           <Typography variant="subtitle2" color="gray" fontWeight="bold">
             {snippet?.channelTitle}
             <CheckCircle sx={{ fontSize: 12, color: "gray", ml: "5px" }} />

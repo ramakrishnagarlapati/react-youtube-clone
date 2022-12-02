@@ -13,10 +13,19 @@ function App() {
       <Box sx={{ backgroundColor: "#000", color: "white" }}>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Feed />} />
-          <Route path="/video/:id" element={<VideoDetail />} />
-          <Route path="/channel/:id" element={<ChannelDetail />} />
-          <Route path="/search/:searchTerm" element={<SearchFeed />} />
+          <Route path="/react-youtube-clone" element={<Feed />} />
+          <Route
+            path="/react-youtube-clone/video/:id"
+            element={<VideoDetail />}
+          />
+          <Route
+            path="/react-youtube-clone/channel/:id"
+            element={<ChannelDetail />}
+          />
+          <Route
+            path="/react-youtube-clone/search/:searchTerm"
+            element={<SearchFeed />}
+          />
         </Routes>
       </Box>
     </BrowserRouter>
